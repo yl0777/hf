@@ -102,16 +102,11 @@ data = {
         "value":'👗穿衣建议：'
     },
     "love_days1": {
-        'value':' 💕我们已经认识：'
+        'value':'🥰我们已经认识：'
     },
     "birthday_left1": {
       "value":'🎂我的生日还有：'
     },
-  # "birthday_left": {
-    #     "value":get_birthday(),
-    #     "color":get_random_color()
-    # },
-
     #日期：今天日期
     "date": {
       'value':today.strftime('%Y年%m月%d日'),
