@@ -107,6 +107,93 @@ data = {
     "birthday_left1": {
       "value":'🎂我的生日还有：'
     },
+  # "birthday_left": {
+    #     "value":get_birthday(),
+    #     "color":get_random_color()
+    # },
+
+    #日期：今天日期
+    "date": {
+      'value':today.strftime('%Y年%m月%d日'),
+      'color':'#2fe30d'
+    },
+
+    #星期
+    "week": {
+        "value":week,
+        "color":get_random_color()
+    },
+
+    #所在城市
+    "area":{
+        "value":area,
+        "color":get_random_color()
+    },
+    # "city": {
+    #     "value":city,
+    #     "color":get_random_color()
+    # },
+
+    #天气
+    "weather":{
+        "value":weather,
+        "color":get_random_color()
+    },
+    #风向
+    "wind": {
+        "value":wind,
+        "color":get_random_color()
+    },
+    #风速
+    "windsc": {
+        "value":windsc,
+        "color":get_random_color()
+    },
+    #当前温度
+    "real":{
+        "value":real,
+        "color":get_random_color()
+    },
+    #低温
+    "lowest":{
+        "value":lowest,
+        "color":get_random_color()
+    },
+    #高温
+    "highest":{
+        "value":highest,
+        "color":get_random_color()
+    },
+    #日出时间
+    "sunrise":{
+        "value":sunrise,
+        "color":get_random_color()
+    },
+    #日落时间
+    "sunset":{
+        "value":sunset,
+        "color":get_random_color()
+    },
+    #降雨概率：
+    "pop":{
+        "value":pop,
+        "color":get_random_color()
+    },
+    #穿衣建议：
+    "tips":{
+        "value":tips,
+        "color":get_random_color()
+    },
+    #相爱时间
+    "love_days": {
+        "value":get_count(),
+        "color":get_random_color()
+    },
+    #生日倒计时
+    "birthday_left": {
+        "value":get_birthday(),
+        "color":get_random_color()
+    },
     #随机情话
     "words": {
         "value":get_words(),
