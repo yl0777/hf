@@ -69,130 +69,43 @@ wm = WeChatMessage(client)
 area, week, weather, real, lowest, highest, wind, windsc, sunrise, sunset, pop, tips = get_weather1()
 data = {
     "date1": {
-        'value':'今天是：'
+        'value':'📅今天是：'
     },
     "city1": {
-        'value':'城市：'
+        'value':'🏙城市：'
     },
     "tq": {
-        "value":'今天天气：'
+        "value":'🌤今天天气：'
     },
     "wind_windsc": {
-        "value":'风向风速：'
+        "value":'🌀风向风速：'
     },
     "temperature1": {
-        'value':'当前温度：'
+        'value':'🌡当前温度：'
     },
     "lowest1": {
-        'value':'今日最低温：'
+        'value':'🌑今日最低温：'
     },
     "highest1": {
-        'value':'今日最高温：'
+        'value':'🌈今日最高温：'
     },
     "sunrise1": {
-        'value':'日出时间：'
+        'value':'🌅日出时间：'
     },
     "sunset1": {
-        'value':'日落时间：'
+        'value':'🌇日落时间：'
     },
     "pop1": {
-        'value':'降雨概率：'
+        'value':'💧降雨概率：'
     },
     "tips1": {
-        "value":'穿衣建议：'
+        "value":'👗穿衣建议：'
     },
     "love_days1": {
-        'value':'我们已经相爱：'
+        'value':' 💕我们已经认识：'
     },
     "birthday_left1": {
-      "value":'你的生日还有：'
-    },
-    # "birthday_left": {
-    #     "value":get_birthday(),
-    #     "color":get_random_color()
-    # },
-
-    #日期：今天日期
-    "date": {
-      'value':today.strftime('%Y年%m月%d日'),
-      'color':'#2fe30d'
-    },
-
-    #星期
-    "week": {
-        "value":week,
-        "color":get_random_color()
-    },
-
-    #所在城市
-    "area":{
-        "value":area,
-        "color":get_random_color()
-    },
-    # "city": {
-    #     "value":city,
-    #     "color":get_random_color()
-    # },
-
-    #天气
-    "weather":{
-        "value":weather,
-        "color":get_random_color()
-    },
-    #风向
-    "wind": {
-        "value":wind,
-        "color":get_random_color()
-    },
-    #风速
-    "windsc": {
-        "value":windsc,
-        "color":get_random_color()
-    },
-    #当前温度
-    "real":{
-        "value":real,
-        "color":get_random_color()
-    },
-    #低温
-    "lowest":{
-        "value":lowest,
-        "color":get_random_color()
-    },
-    #高温
-    "highest":{
-        "value":highest,
-        "color":get_random_color()
-    },
-    #日出时间
-    "sunrise":{
-        "value":sunrise,
-        "color":get_random_color()
-    },
-    #日落时间
-    "sunset":{
-        "value":sunset,
-        "color":get_random_color()
-    },
-    #降雨概率：
-    "pop":{
-        "value":pop,
-        "color":get_random_color()
-    },
-    #穿衣建议：
-    "tips":{
-        "value":tips,
-        "color":get_random_color()
-    },
-    #相爱时间
-    "love_days": {
-        "value":get_count(),
-        "color":get_random_color()
-    },
-    #生日倒计时
-    "birthday_left": {
-        "value":get_birthday(),
-        "color":get_random_color()
+      "value":'🎂你的生日还有：'
     },
     #随机情话
     "words": {
