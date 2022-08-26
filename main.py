@@ -20,7 +20,7 @@ template_id = os.environ["TEMPLATE_ID"]
 
 #天行数据api
 def get_weather1():
-  url = "http://api.tianapi.com/tianqi/index?key=8a1a8aabc5bce0999dc9fc57e0b31f80&city=" + city
+  url = "http://api.tianapi.com/tianqi/index?key=36e895b7dc412d2a918b247798058672=" + city
   res1 = requests.get(url).json()
   muzi = res1['newslist'][0]
   #area 城市  week = 星期 weather = 今天天气  real = 当前温度  lowest = 最低气温  highest= 最高气温  wind = 风项  windsc = 风力 sunrise = 日出时间 sunset = 日落时间 pop = 降雨概率 tips = 穿衣建议 
