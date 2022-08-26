@@ -20,7 +20,7 @@ template_id = os.environ["TEMPLATE_ID"]
 
 #天行数据api
 def get_weather1():
-  url = "http://api.tianapi.com/tianqi/index?key=edffe502a886868c5ef92045ab3c6ce1&city=" + city
+  url = "http://api.tianapi.com/tianqi/index?key=8a1a8aabc5bce0999dc9fc57e0b31f80&city=" + city
   res1 = requests.get(url).json()
   muzi = res1['newslist'][0]
   #area 城市  week = 星期 weather = 今天天气  real = 当前温度  lowest = 最低气温  highest= 最高气温  wind = 风项  windsc = 风力 sunrise = 日出时间 sunset = 日落时间 pop = 降雨概率 tips = 穿衣建议 
@@ -69,44 +69,49 @@ wm = WeChatMessage(client)
 area, week, weather, real, lowest, highest, wind, windsc, sunrise, sunset, pop, tips = get_weather1()
 data = {
     "date1": {
-        'value':'📅今天是：'
+        'value':' 🗓今天是：'
     },
     "city1": {
-        'value':'🏙城市：'
+        'value':' 🏙城市：'
     },
     "tq": {
-        "value":'🌤今天天气：'
+        "value":' 🌥今天天气：'
     },
     "wind_windsc": {
-        "value":'🌀风向风速：'
+        "value":' 🌬风向风速：'
     },
     "temperature1": {
-        'value':'🌡当前温度：'
+        'value':' 🌡当前温度：'
     },
     "lowest1": {
-        'value':'🌑今日最低温：'
+        'value':' 🌑今日最低温：'
     },
     "highest1": {
-        'value':'🌈今日最高温：'
+        'value':' ☀今日最高温：'
     },
     "sunrise1": {
-        'value':'🌅日出时间：'
+        'value':' 🌄日出时间：'
     },
     "sunset1": {
-        'value':'🌇日落时间：'
+        'value':' 🌇日落时间：'
     },
     "pop1": {
-        'value':'💧降雨概率：'
+        'value':' 🌧降雨概率：'
     },
     "tips1": {
-        "value":'👗穿衣建议：'
+        "value":' 👗穿衣建议：'
     },
     "love_days1": {
-        'value':'🥰我们已经认识：'
+        'value':' 🐣我们已经认识：'
     },
     "birthday_left1": {
-      "value":'🎂我的生日还有：'
+      "value":' 🎂我的生日还有：'
     },
+    # "birthday_left": {
+    #     "value":get_birthday(),
+    #     "color":get_random_color()
+    # },
+
     #日期：今天日期
     "date": {
       'value':today.strftime('%Y年%m月%d日'),
